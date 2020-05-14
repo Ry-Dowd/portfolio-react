@@ -12,6 +12,8 @@ const Text = styled.div`
   max-width: 80vw;
   color: white;
   margin: 0 auto;
+  animation-duration:3s;
+  animation-name:fadeIn;
 `
 
 const Button = styled.button`
@@ -20,6 +22,8 @@ const Button = styled.button`
   border: 3px solid white;
   color: white;
   margin-top: 2rem;
+  animation-duration:3s;
+  animation-name:fadeIn;
 `
 
 class Landing extends Component {
