@@ -4,6 +4,8 @@ import styled from "styled-components"
 const NavContainer = styled.nav`
   background-color: black;
   color: white;
+  position: sticky;
+  top:0;
 `
 const Brand = styled.div`
   color: teal;

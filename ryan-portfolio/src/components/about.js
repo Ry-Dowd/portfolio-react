@@ -18,7 +18,7 @@ const InfoBox = styled.div``
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "OsornoSelfie.png" }) {
+      file(relativePath: { eq: "images/OsornoSelfie.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid

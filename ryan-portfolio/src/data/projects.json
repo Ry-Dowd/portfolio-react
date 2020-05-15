@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Mockout Mock Draft Simulator",
+    "description": "From the ground up, rebuilt an existing application in React. Worked closely with our end client, responding to their needs for the final product’s layout and functionality. Coordinated remotely with my collaborating developer. Successfully delivered and then integrated the final product into an existing Wordpress site.",
+    "technologies": ["React", "Wordpress", "AWS Lambda"],
+    "link": "",
+    "image": "",
+    "github": ""
+  },
+  {
+    "title": "Flavordome",
+    "description": "",
+    "technologies": [
+      "Python",
+      "Django",
+      "Websockets",
+      "VueJS",
+      "Vuex",
+      "Webpack",
+      "Redis"
+    ],
+    "link": "",
+    "image": "",
+    "github": ""
+  },
+  {
+    "title": "Pathfinder",
+    "description": "",
+    "technologies": ["Python", "Pillow"],
+    "link": "",
+    "image": "",
+    "github": ""
+  },
+  {
+    "title": "Zombie Survival",
+    "description": "",
+    "technologies": ["Javascript", "HTMLCanvas"],
+    "link": "",
+    "image": "",
+    "github": ""
+  }
+]
