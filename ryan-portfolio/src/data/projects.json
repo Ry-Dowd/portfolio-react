@@ -3,8 +3,8 @@
     "title": "Mockout Mock Draft Simulator",
     "description": "From the ground up, rebuilt an existing application in React. Worked closely with our end client, responding to their needs for the final product’s layout and functionality. Coordinated remotely with my collaborating developer. Successfully delivered and then integrated the final product into an existing Wordpress site.",
     "technologies": ["React", "Wordpress", "AWS Lambda"],
-    "link": "",
-    "image": "",
+    "link": "profootballnetwork.com/mockdraft",
+    "image": "./images/Mockout.png",
     "github": ""
   },
   {
@@ -19,9 +19,9 @@
       "Webpack",
       "Redis"
     ],
-    "link": "",
-    "image": "",
-    "github": ""
+    "link": "flavordome.herokuapp.com",
+    "image": "./images/Flavordome.png",
+    "github": "https://github.com/FlavorDome/FlavorDome"
   },
   {
     "title": "Pathfinder",
@@ -35,8 +35,8 @@
     "title": "Zombie Survival",
     "description": "",
     "technologies": ["Javascript", "HTMLCanvas"],
-    "link": "",
-    "image": "",
-    "github": ""
+    "link": "zed-swarm.surge.sh",
+    "image": "./images/ZedSwarm.png ",
+    "github": "https://github.com/momentum-cohort-2019-09/w3-build-a-game-Ry-Dowd"
   }
 ]
