@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -13,7 +13,9 @@ const InfoContent = styled.div`
   align-items:center;
   height: 100%;
 `
-const Container = styled.div``
+const Container = styled.div`
+  margin-top: 3rem;
+`
 const PhotoColumn = styled.div``
 const PhotoBox = styled.div`
   && {
@@ -37,7 +39,7 @@ const About = () => {
   `)
   return (
     <>
-      <Container id="about" className="columns is-gapless">
+      <Container id="about">
         <Columns className="columns is-gapless">
           <PhotoColumn className="column">
             <PhotoBox className="column">

@@ -27,11 +27,15 @@ const Button = styled.button`
 `
 
 class Landing extends Component {
+  handleClick = () => {
+    document.getElementById('nav').scrollIntoView({behavior:'smooth'})
+  }
+
   render = () => (
     <Container>
       <Text>Hey there, I'm Ryan Dowd</Text>
       <Text>I'm a Full-Stack Software Developer</Text>
-      <Button>Learn More</Button>
+      <Button onClick={this.handleClick}>Learn More</Button>
     </Container>
   )
 }

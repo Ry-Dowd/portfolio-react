@@ -6,7 +6,6 @@
  */
 
 import React, {Component} from "react"
-import PropTypes from "prop-types"
 import Landing from "./landing"
 import "./layout.css"
 import NavBar from './navBar'

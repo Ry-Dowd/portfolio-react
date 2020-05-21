@@ -56,11 +56,25 @@ class NavBar extends Component {
     })
   }
 
+  scrollToSection = (section) => {
+    const coords = document.getElementById(section).getBoundingClientRect()
+    console.log(coords)
+    if (this.state.menuExpanded) {
+      const top = coords.top - 180
+      window.scrollBy({ top: top, behavior: 'smooth' })
+      this.setState({ menuExpanded: false })
+    } else {
+      const top = coords.top - 50
+      window.scrollBy({ top: top, behavior: 'smooth' })
+    }
+  }
+
   render = () => (
     <NavContainer
       className="navbar"
       role="navigation"
       aria-label="main navigation"
+      id="nav"
     >
       <Brand className="navbar-brand">
         <Burger
@@ -85,9 +99,9 @@ class NavBar extends Component {
         }
       >
         <div className="navbar-start">
-          <MenuItem href='#about' className="navbar-item">About Me</MenuItem>
+          <MenuItem onClick={() => this.scrollToSection('about')} className="navbar-item">About Me</MenuItem>
           <MenuItem href='#projects' className="navbar-item">Projects</MenuItem>
-          <MenuItem href='#contact'className="navbar-item">Contact</MenuItem>
+          <MenuItem href='#contact' className="navbar-item">Contact</MenuItem>
         </div>
         <div className="navbar-end"></div>
       </NavMenu>
