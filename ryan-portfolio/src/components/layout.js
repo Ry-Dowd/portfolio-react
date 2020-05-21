@@ -11,6 +11,7 @@ import Landing from "./landing"
 import "./layout.css"
 import NavBar from './navBar'
 import About from './about'
+import Projects from './projects'
 
 class Layout extends Component {
   state = {
@@ -22,7 +23,7 @@ class Layout extends Component {
       <NavBar />
       <div>
         <About />
-        {/* <Projects /> */}
+        <Projects />
         {/* <Contact /> */}
       </div>
     </>
