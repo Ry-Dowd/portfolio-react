@@ -100,7 +100,7 @@ class NavBar extends Component {
       >
         <div className="navbar-start">
           <MenuItem onClick={() => this.scrollToSection('about')} className="navbar-item">About Me</MenuItem>
-          <MenuItem href='#projects' className="navbar-item">Projects</MenuItem>
+          <MenuItem onClick={() => this.scrollToSection('projects')} className="navbar-item">Projects</MenuItem>
           <MenuItem href='#contact' className="navbar-item">Contact</MenuItem>
         </div>
         <div className="navbar-end"></div>

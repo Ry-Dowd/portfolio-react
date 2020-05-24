@@ -6,6 +6,19 @@ import Img from "gatsby-image"
 const ProjectContainer = styled.div`
   width: 80vw;
   margin: auto;
+  margin-top:2rem;
+  background:#fff;
+  border:1px solid black;
+  border-radius:4px;
+  box-shadow: 10px 5px 20px;
+`
+const Title = styled.div`
+  text-align: center;
+  color: #2c3531;
+`
+
+const ReverseColumn = styled.div`
+  flex-direction: row-reverse;
 `
 
 
@@ -14,11 +27,10 @@ const ProjectLeft = (props) => {
     <li>
       <ProjectContainer>
         <div className="columns is-gapless">
-        <Image image={props.project.image} title={props.project.title}>
-        </Image>
-      <Details className='column'>
-
-      </Details>
+          <Image image={props.project.image} title={props.project.title}>
+          </Image>
+          <Details project={props.project}>
+          </Details>
         </div>
       </ProjectContainer >
     </li >
@@ -29,12 +41,14 @@ const ProjectRight = (props) => {
   console.log(props)
   return (
     <li>
-      <ProjectContainer className="columns">
-        <Details className='column'>
-        </Details>
-        <Image className='column' image={props.project.image} title={props.project.title}>
-        </Image>
-      </ProjectContainer>
+      <ProjectContainer>
+        <ReverseColumn className="columns is-gapless">
+          <Image image={props.project.image} title={props.project.title}>
+          </Image>
+          <Details project={props.project}>
+          </Details>
+        </ReverseColumn>
+      </ProjectContainer >
     </li>
   )
 }
@@ -52,6 +66,7 @@ const Image = (props) => {
 const Details = (props) => {
   return (
     <div className="column">
+      <Title className='title is-3'>{props.project.title}</Title>
     </div>
   )
 }
@@ -81,7 +96,8 @@ const Projects = () => {
   `)
   console.log(data)
   return (
-    <>
+    <div id='projects' className='section'>
+      <h2 className="title is-2">Projects</h2>
       <ul>
         {data.allProjectsJson.edges.map((project, index) => {
           if (index % 2 === 0) {
@@ -91,7 +107,7 @@ const Projects = () => {
           }
         })}
       </ul>
-    </>
+    </div>
   )
 }
 export default Projects

@@ -14,7 +14,7 @@ const InfoContent = styled.div`
   height: 100%;
 `
 const Container = styled.div`
-  margin-top: 3rem;
+
 `
 const PhotoColumn = styled.div``
 const PhotoBox = styled.div`
@@ -51,7 +51,7 @@ const About = () => {
           </PhotoColumn>
           <InfoBox className="column">
             <InfoContent>
-              <p>I'm Creative and curious. I like building things. I like breaking
+              <p>I'm creative and curious. I like building things. I like breaking
               things. I like learning how things work. I'm a fan of
               adventures, whether they occur on a tabletop, on a screen, or in
               the great outdoors. I love soccer, I've played it since I could
