@@ -14,7 +14,8 @@ import Projects from './projects'
 import styled from'styled-components'
 
 const Backdrop = styled.div`
-  background: #f2f2f2;
+  background: #000;
+  color:#e6f4f1;
 `
 
 class Layout extends Component {

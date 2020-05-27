@@ -14,7 +14,6 @@ const ProjectContainer = styled.div`
 `
 const Title = styled.div`
   text-align: center;
-  color: #2c3531;
 `
 
 const ReverseColumn = styled.div`
