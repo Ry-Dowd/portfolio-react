@@ -6,11 +6,17 @@
  */
 
 import React, {Component} from "react"
-import PropTypes from "prop-types"
 import Landing from "./landing"
 import "./layout.css"
 import NavBar from './navBar'
 import About from './about'
+import Projects from './projects'
+import styled from'styled-components'
+
+const Backdrop = styled.div`
+  background: #000;
+  color:#e6f4f1;
+`
 
 class Layout extends Component {
   state = {
@@ -20,11 +26,11 @@ class Layout extends Component {
     <>
       <Landing />
       <NavBar />
-      <div>
+      <Backdrop>
         <About />
-        {/* <Projects /> */}
+        <Projects />
         {/* <Contact /> */}
-      </div>
+      </Backdrop>
     </>
   )
 }

@@ -1,11 +1,21 @@
-import React, { Component } from "react"
+import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const Columns = styled.div``
-const InfoContent = styled.div``
-const Container = styled.div``
+const InfoContent = styled.div`
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height: 100%;
+`
+const Container = styled.div`
+
+`
 const PhotoColumn = styled.div``
 const PhotoBox = styled.div`
   && {
@@ -29,7 +39,7 @@ const About = () => {
   `)
   return (
     <>
-      <Container id="about" className="columns is-gapless">
+      <Container id="about">
         <Columns className="columns is-gapless">
           <PhotoColumn className="column">
             <PhotoBox className="column">
@@ -41,14 +51,13 @@ const About = () => {
           </PhotoColumn>
           <InfoBox className="column">
             <InfoContent>
-              I'm Creative and curious. I like building things. I like breaking
-              things. I like understanding how things work. I'm a fan of
+              <p>I'm creative and curious. I like building things. I like breaking
+              things. I like learning how things work. I'm a fan of
               adventures, whether they occur on a tabletop, on a screen, or in
               the great outdoors. I love soccer, I've played it since I could
               walk (or before that depending on who you ask...). I've recently
-              discovered the joys of rock-climbing. I worked in a brewery for a
-              few years until one day I realized that I wanted more from life than just
-              drinking really, really, ridiculously tasty beverages. 
+              discovered the joys of rock-climbing.</p><br />
+              <p>Let's build something together.</p>
             </InfoContent>
           </InfoBox>
         </Columns>

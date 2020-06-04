@@ -25,18 +25,18 @@
   },
   {
     "title": "Pathfinder",
-    "description": "",
+    "description": "Python program that takes arcGis data and finds a path from west to east that involves the least amount of elevation change, then plots a representation of the landscape and all possible paths using the pillow library.",
     "technologies": ["Python", "Pillow"],
     "link": "",
-    "image": "",
-    "github": ""
+    "image": "./images/Pathfinder.png",
+    "github": "https://github.com/momentum-cohort-2019-09/w6-pathfinder-Ry-Dowd"
   },
   {
     "title": "Zombie Survival",
-    "description": "",
+    "description": "Browser game built using the HTML canvas element and object oriented programming in Javascript.",
     "technologies": ["Javascript", "HTMLCanvas"],
     "link": "zed-swarm.surge.sh",
-    "image": "./images/ZedSwarm.png ",
+    "image": "./images/ZedSwarm.png",
     "github": "https://github.com/momentum-cohort-2019-09/w3-build-a-game-Ry-Dowd"
   }
 ]
