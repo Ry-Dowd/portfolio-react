@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useRef, useLayoutEffect, useState} from 'react';
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import useScrollPosition from '../hooks/useScrollPosition'
 
 const ProjectContainer = styled.div`
   width: 80vw;
   margin: auto;
   margin-top:2rem;
-  background:#fff;
-  border:1px solid black;
+  background:#000;
   border-radius:4px;
+  border: 3px solid 
 `
 const Title = styled.div`
   text-align: center;
@@ -19,8 +20,8 @@ const ReverseColumn = styled.div`
   flex-direction: row-reverse;
 `
 
-
 const ProjectLeft = (props) => {
+  
   return (
     <li>
       <ProjectContainer>
@@ -36,7 +37,8 @@ const ProjectLeft = (props) => {
 }
 
 const ProjectRight = (props) => {
-  console.log(props)
+  const [isVisible, setIsVisible] = useState(false)
+  
   return (
     <li>
       <ProjectContainer>
@@ -70,6 +72,10 @@ const Details = (props) => {
 }
 
 const Projects = () => {
+  useScrollPosition(({currentPosition}) => {
+    console.log(currentPosition)
+  })
+  
   const data = useStaticQuery(graphql`
     query{
       allProjectsJson{
@@ -82,7 +88,7 @@ const Projects = () => {
             github
             image{
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 600, maxHeight:400) {
                   ...GatsbyImageSharpFluid
                 }
               }
