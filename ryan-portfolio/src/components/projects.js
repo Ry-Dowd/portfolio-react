@@ -10,7 +10,6 @@ const ProjectContainer = styled.div`
   background:#fff;
   border:1px solid black;
   border-radius:4px;
-  box-shadow: 10px 5px 20px;
 `
 const Title = styled.div`
   text-align: center;
