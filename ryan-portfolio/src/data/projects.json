@@ -32,7 +32,7 @@
     "github": "https://github.com/momentum-cohort-2019-09/w6-pathfinder-Ry-Dowd"
   },
   {
-    "title": "Zombie Survival",
+    "title": "Zed Swarm",
     "description": "Browser game built using the HTML canvas element and object oriented programming in Javascript.",
     "technologies": ["Javascript", "HTMLCanvas"],
     "link": "zed-swarm.surge.sh",
